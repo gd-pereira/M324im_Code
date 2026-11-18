@@ -1,3 +1,0 @@
-# copy to aws.conf (git-ignored) and fill in
-PRIVATE_KEY="$HOME/.ssh/<your-key>.pem"
-DEST="ubuntu@<ec2-public-dns>"

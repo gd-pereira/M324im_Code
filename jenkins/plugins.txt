@@ -1,7 +1,0 @@
-workflow-aggregator
-git
-nodejs
-docker-workflow
-credentials-binding
-pipeline-stage-view
-junit

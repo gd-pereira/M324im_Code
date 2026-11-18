@@ -1,0 +1,28 @@
+pipeline {
+  agent any
+  tools { nodejs "node" }
+  stages {
+    stage('Cloning Repo') {
+      steps {
+        script {
+          git branch: 'main',
+              url: 'https://github.com/gd-pereira/M324im_Code.git'
+        }
+      }
+    }
+    stage('Install dependencies') {
+      steps {
+        dir('02/02_Exercises/01') {
+          sh 'npm install'
+        }
+      }
+    }
+    stage('Test') {
+      steps {
+        dir('02/02_Exercises/01') {
+          sh 'npm test'
+        }
+      }
+    }
+  }
+}
