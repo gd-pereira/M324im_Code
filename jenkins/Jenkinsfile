@@ -9,7 +9,7 @@ pipeline {
   agent any
   tools { nodejs "node" }
   environment {
-    REPO_URL = ''          // e.g. 'https://github.com/<you>/<repo>.git'
+    REPO_URL = 'https://github.com/gd-pereira/M324im_Code.git'  // '' = use local /repo mount
     REPO_BRANCH = 'main'
     APP_DIR = '02/02_Exercises/01'
   }
